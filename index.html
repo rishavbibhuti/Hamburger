@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🍔 BurgerWorld</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Offers</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">☰</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/hero.jpg" alt="Burger">
+</section>
+
+<!-- HEADING -->
+<section class="heading">
+  <h1>Delicious Fast Food</h1>
+</section>
+
+<!-- MENU -->
+<section class="menu">
+  <h2>Our Menu</h2>
+
+  <div class="menu-container">
+
+    <div class="card">
+      <img src="images/burger.jpg" alt="Burger">
+      <h3>Burger</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Burger',120)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="images/fries.jpg" alt="Fries">
+      <h3>Fries</h3>
+      <p>₹80</p>
+      <button onclick="addToCart('Fries',80)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="images/drinks.jpg" alt="Drink">
+      <h3>Cold Drink</h3>
+      <p>₹60</p>
+      <button onclick="addToCart('Drink',60)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTENT SECTIONS -->
+<section class="section">
+  <div class="text">
+    <h2>Juicy Burgers</h2>
+    <p>Fresh and tasty burgers for everyone.</p>
+  </div>
+  <div class="image">
+    <img src="images/burger.jpg">
+  </div>
+</section>
+
+<section class="section reverse">
+  <div class="image">
+    <img src="images/fries.jpg">
+  </div>
+  <div class="text">
+    <h2>Crispy Fries</h2>
+    <p>Golden crispy fries you will love.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="text">
+    <h2>Cold Drinks</h2>
+    <p>Refreshing chilled beverages.</p>
+  </div>
+  <div class="image">
+    <img src="images/drinks.jpg">
+  </div>
+</section>
+
+<!-- CART -->
+<section class="cart">
+  <h2>🛒 Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: ₹<span id="total">0</span></h3>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 BurgerWorld | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

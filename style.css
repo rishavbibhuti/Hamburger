@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff8f0;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff6b6b, #ffb347);
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* HEADING */
+.heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+}
+
+/* MENU */
+.menu {
+  text-align: center;
+  padding: 40px;
+}
+
+.menu-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+}
+
+/* SECTION */
+.section {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CART */
+.cart {
+  padding: 30px;
+  background: #fff3e0;
+  margin: 20px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+/* ANIMATION */
+.section, .card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* GLOBAL IMAGE FIX */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #ff6b6b;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .hero img {
+    height: 200px;
+  }
+}
